@@ -4,6 +4,7 @@
 import rospy
 from math import sqrt
 from std_msgs.msg import Int16
+from std_msgs.msg import UInt8
 from std_msgs.msg import Float32
 from nav_msgs.msg import Odometry
 from std_msgs.msg import String
@@ -148,7 +149,7 @@ pub_stop_start = rospy.Publisher(
 pub_speed = rospy.Publisher("manual_control/speed", Int16, queue_size=100)
 pub_steering = rospy.Publisher(
     "/steering",
-    Int16,
+    UInt8,
     queue_size=100)
 pub_info = rospy.Publisher("simple_drive_control/info", String, queue_size=100)
 
