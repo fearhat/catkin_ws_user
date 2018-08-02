@@ -51,7 +51,7 @@ def main(map_file):
             show_nearest((0.1*x, 0.1*y))
 
 
-    np.save('matrixDynamic_lane2.npy', matrix)
+    np.save('parking.npy', matrix)
     print('matrix is saved.')
     plt.show()
  
@@ -59,4 +59,4 @@ def main(map_file):
 
 
 if __name__ == '__main__':
-    main('sample_map_origin_map.txt')
+    main('parkenmitte.txt')
