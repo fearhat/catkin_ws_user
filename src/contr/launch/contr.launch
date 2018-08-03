@@ -1,0 +1,4 @@
+<launch>
+    <node name="fkie_disco" pkg="master_discovery_fkie" type="master_discovery" />
+    <node name="fkie_sync" pkg="master_sync_fkie" type="master_sync" />
+</launch> 
